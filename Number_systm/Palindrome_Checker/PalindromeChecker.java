@@ -1,3 +1,5 @@
+package Number_systm.Palindrome_Checker;
+
 import java.util.Scanner;
 
 public class PalindromeChecker {
