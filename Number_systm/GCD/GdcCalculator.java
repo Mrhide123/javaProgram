@@ -1,3 +1,5 @@
+package Number_systm.GCD;
+
 class GcdCalculator {
 
     public static void main(String[] args) {
