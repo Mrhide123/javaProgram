@@ -1,25 +1,17 @@
 import java.util.Scanner;
-
-public class SumOfNaturalNumbers {
+class SumNo {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a positive integer: ");
-        int n = input.nextInt();
+        System.out.print("Enter a value for N: ");
+        int N = scanner.nextInt();
 
-        if (n <= 0) {
-            System.out.println("Please enter a positive integer.");
-        } else {
-            int sum = 0;
+        int S = 1;
+        int Sum = N * (N + S) / 2;
 
-            // Calculate the sum of natural numbers up to n
-            for (int i = 1; i <= n; i++) {
-                sum += i;
-            }
+        System.out.println("Result: " + Sum);
 
-            System.out.println("The sum of natural numbers up to " + n + " is: " + sum);
-        }
-
-        input.close();
+        // Don't forget to close the scanner when you're done with it.
+        scanner.close();
     }
 }
